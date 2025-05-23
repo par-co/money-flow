@@ -1,2 +1,2 @@
 # money-flow
-![MoneyFlow Home Page](./public/MoneyFlowHome.png)
+![MoneyFlow Home Page Type](./public/money-flow-home-01.png)
