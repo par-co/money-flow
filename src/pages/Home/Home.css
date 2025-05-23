@@ -1,0 +1,42 @@
+.home {
+  width: 95%;
+  margin: 0 auto 3rem;
+  max-width: 40rem;
+  background-color: var(--background-light);
+  border-radius: 5px;
+  padding: 1rem 0;
+}
+
+.welcome {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  overflow-wrap: anywhere;
+}
+
+.text {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+  overflow-wrap: anywhere;
+}
+
+.loading {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .home {
+    max-width: 22rem;
+  }
+}

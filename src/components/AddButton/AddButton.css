@@ -1,0 +1,20 @@
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  color: var(--text-light);
+  background-color: var(--purple);
+  border-radius: 20px;
+  border: 2px solid var(--border-light);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+.btn:hover {
+  background-color: white;
+  border: 2px solid var(--purple);
+  color: var(--purple);
+}

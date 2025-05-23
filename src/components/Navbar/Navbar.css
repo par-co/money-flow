@@ -1,0 +1,29 @@
+.navbar-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-component a {
+  overflow-wrap: anywhere;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--gray);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.navbar-component a.active {
+  background-color: var(--purple);
+  color: var(--gray);
+}
+
+@media (min-width: 360px) {
+  .navbar-component {
+    flex-direction: row;
+  }
+}
