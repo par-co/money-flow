@@ -1,0 +1,33 @@
+.total {
+  width: 100%;
+  margin: 0 auto 1rem;
+  max-width: 22rem;
+}
+
+.total-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+  border-radius: 10px;
+  border: 2px solid var(--purple);
+  border-bottom-width: 3px;
+
+  font-size: 1rem;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 359px) {
+  .total {
+    max-width: fit-content;
+  }
+
+  .total-row {
+    flex-direction: column;
+    text-align: center;
+  }
+}

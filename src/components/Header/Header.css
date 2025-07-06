@@ -1,0 +1,16 @@
+.header-component {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 25rem;
+}
+
+.title {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+  color: var(--purple);
+  font-size: 2rem;
+  overflow-wrap: anywhere;
+  text-align: center;
+}

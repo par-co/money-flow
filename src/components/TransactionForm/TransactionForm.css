@@ -1,0 +1,99 @@
+.transaction-form {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 38rem;
+}
+
+.icon-and-tag {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 0.55fr 0.45fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  grid-column: 1;
+  width: 100%;
+}
+
+.icon-purple {
+  color: var(--purple);
+}
+
+.icon-green {
+  color: var(--green);
+}
+
+.transaction-form-label {
+  grid-column: 2;
+  width: 100%;
+  margin: 0 auto;
+  color: var(--text-dark);
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.transaction-form-select {
+  grid-column: 3;
+  color: var(--text-light);
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--purple);
+  width: 100%;
+  margin: 0 auto;
+  overflow-wrap: anywhere;
+}
+
+.transaction-form-currency-input {
+  grid-column: 3;
+  color: var(--text-light);
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--purple);
+  width: 100%;
+  margin: 0 auto;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .transaction-form {
+    max-width: 23rem;
+  }
+
+  .icon-and-tag {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    row-gap: 0.5rem;
+    padding: 1rem 1rem;
+  }
+
+  .icon-and-tag .icon {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .transaction-form-label {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .transaction-form-select {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .transaction-form-currency-input {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+.transaction-form-confirmation {
+  grid-column: 3;
+  font-size: 1rem;
+  color: var(--green);
+  margin: 0 auto;
+  padding: 1rem;
+  overflow-wrap: anywhere;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}

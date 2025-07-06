@@ -1,0 +1,116 @@
+.transaction-Item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--background-light);
+  border: 2px solid;
+}
+
+.income {
+  border-color: var(--green);
+}
+
+.expense {
+  border-color: var(--red);
+}
+
+.transaction-Item-number {
+  grid-column: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-light);
+  border-radius: 50%;
+  background-color: var(--purple);
+  overflow-wrap: anywhere;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transaction-Item-info-div {
+  grid-column: 2;
+  width: 100%;
+}
+
+.transaction-Item-info {
+  width: 100%;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.transaction-Item-each-title {
+  border-radius: 10px;
+  color: var(--purple);
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  overflow-wrap: anywhere;
+}
+
+.transaction-Item-each-value {
+  color: var(--text-dark);
+  padding: 0.25rem 0;
+  display: inline-block;
+  overflow-wrap: anywhere;
+}
+
+.delete-btn {
+  grid-column: 3;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  color: var(--text-light);
+  background-color: var(--red);
+  border-radius: 20px;
+  border: 2px solid var(--red);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.delete-btn:hover {
+  background-color: var(--btn-light);
+  color: var(--red);
+}
+
+.delete-btn:active {
+  background-color: var(--btn-dark);
+  color: var(--red);
+}
+
+@media (max-width: 480px) {
+  .transaction-Item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .transaction-Item-number {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .transaction-Item-info-div {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .delete-btn {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
