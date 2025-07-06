@@ -1,0 +1,44 @@
+.transactions-page-main {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 31rem;
+  padding: 0 0.5rem;
+}
+
+.no-transactions-found {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 2rem;
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+  background-color: var(--background-light);
+  border-radius: 5px;
+}
+
+.transactions-page-loading {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 2rem;
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+  background-color: var(--background-light);
+  border-radius: 5px;
+}
+
+.transactions-page-ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .transactions-page-main {
+    max-width: 24rem;
+  }
+}

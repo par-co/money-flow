@@ -1,0 +1,29 @@
+.error {
+  width: 90%;
+  margin: 0 auto 3rem;
+  max-width: 30rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: var(--red);
+}
+
+.error h2 {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem 0 1rem;
+  color: var(--text-light);
+  font-size: 1.2rem;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.error p {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  color: var(--text-light);
+  font-size: 1rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
