@@ -1,0 +1,29 @@
+.app-fallback-ui {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  font-family: "National Park", Georgia, serif;
+}
+
+.app-fallback-ui-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+@media (max-width: 200px), (max-height: 200px) {
+  .app-fallback-ui {
+    display: block;
+    min-height: auto;
+    height: auto;
+    overflow: auto;
+  }
+}

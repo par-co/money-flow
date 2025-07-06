@@ -1,0 +1,7 @@
+.app-fallback-ui-p {
+  width: fit-content;
+  margin: 0 auto 0.5rem;
+  font-size: clamp(0.5rem, 5vmin, 1rem);
+  overflow-wrap: anywhere;
+  text-align: center;
+}

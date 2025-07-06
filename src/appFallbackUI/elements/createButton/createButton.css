@@ -1,0 +1,44 @@
+.app-fallback-ui-button {
+  display: block;
+  width: fit-content;
+  margin: 1.5rem auto 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--purple);
+  color: var(--text-light);
+  border-radius: 20px;
+  border: 2px solid var(--btn-light);
+  border-bottom-width: 3px;
+  box-shadow: 0 0 8px var(--purple);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, outline-offset 0.3s ease;
+  overflow-wrap: anywhere;
+  font-size: clamp(0.5rem, 5vmin, 1rem);
+  text-align: center;
+  user-select: none;
+}
+
+.app-fallback-ui-button:hover {
+  background-color: var(--btn-light);
+  color: var(--purple);
+  border-color: var(--purple);
+}
+
+.app-fallback-ui-button:focus-visible {
+  background-color: var(--btn-light);
+  color: var(--purple);
+  border-color: var(--purple);
+  outline: 2px dashed var(--purple);
+  outline-offset: 5px;
+}
+
+.app-fallback-ui-button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.app-fallback-ui-button:active {
+  background-color: var(--btn-dark);
+  color: var(--purple);
+  border-color: var(--purple);
+}

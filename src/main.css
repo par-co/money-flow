@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap");
+
+:root {
+  --red: rgb(240, 0, 10);
+  --background-dark: black;
+  --background-light: rgb(200, 200, 200);
+  --background-light-2: rgb(240, 240, 240);
+  --text-dark: black;
+  --text-light: white;
+  --border-dark: black;
+  --border-light: white;
+  --gold: gold;
+  --gold-light: rgb(255, 238, 140);
+  --green: rgb(30, 140, 30);
+  --lime: rgb(191, 255, 0);
+  --blue: rgb(0, 165, 255);
+  --purple: rgb(90, 40, 150);
+  --purple-2: rgb(150, 110, 180);
+  --purple-3: rgb(170, 130, 180);
+  --gray: rgb(200, 200, 200);
+  --btn-light: white;
+  --btn-dark: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "National Park", Georgia, serif;
+  background-color: var(--background-dark);
+}
